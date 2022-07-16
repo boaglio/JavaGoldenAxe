@@ -3,7 +3,7 @@
 Golden Axe game implemented in java using only standard libraries (java 2D, AWT, Swing & Java Sound API), so no external libraries required.
 
 
-## Win64 Executable / Runnable jar / Source code - v0.0.2 (java 16+)
+## Win64 Executable / Runnable jar / Source code - v0.0.2 (java 17+)
 
 https://github.com/leonardo-ono/JavaGoldenAxe/releases/tag/v0.0.2
 

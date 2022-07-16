@@ -13,24 +13,24 @@ import java.util.Map;
  * 
  * axis convention:
  * ----------------
- * left -x <-> +x right (horizontal)
- *   up -y <-> +y down (vertical / jump)  
- * next -z <-> +z far (depth)
+ * left -x &lt;-&gt; +x right (horizontal)
+ *   up -y &lt;-&gt; +y down (vertical / jump)
+ * next -z &lt;-&gt; +z far (depth)
  * 
  * 
  * color information bits:
  * -----------------------
  * color = v00f w000 hhhh_hhhh_hhhh_hhhh
  * 
- * h: terrain_height = (color & 0xffff) - 32768
- * w: is_terrain_walkable = (color & 0x080000) == 0x080000
+ * h: terrain_height = (color &amp; 0xffff) - 32768
+ * w: is_terrain_walkable = (color &amp; 0x080000) == 0x080000
  *
- * w: force_enemy_going_up = (color & 0x010000) == 0x010000
+ * w: force_enemy_going_up = (color &amp; 0x010000) == 0x010000
  * 
- * f: render_floor_shadow = (color & 0x100000) == 0x100000
- * v: render_vertical_shadow = (color & 0x800000) == 0x800000
+ * f: render_floor_shadow = (color &amp; 0x100000) == 0x100000
+ * v: render_vertical_shadow = (color &amp; 0x800000) == 0x800000
  * 
- * follow_camera_y = (color & 0xffff) != 0xffff (65535d)
+ * follow_camera_y = (color &amp; 0xffff) != 0xffff (65535d)
  * 
  * 
  * terrain -> screen space transformation:
